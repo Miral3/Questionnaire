@@ -1,0 +1,84 @@
+:root {
+  /* color */
+  --color-white: #ffffff;
+  --color-blue: #4370E7;
+  --color-deep-blue: #204abe;
+  --color-light-grey:#F3F3FB;
+
+  /* size */
+  --size-question: 1.25rem;
+  --question-space: 3.75rem;
+  --button-space: 1rem;
+  --border-size: 6px;
+  --base-width: 500px;
+  --base-height: 400px;
+  --submit-height: 80px;
+}
+
+body {
+  margin: 0;
+  font-family: 'Roboto';
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--color-light-grey);
+}
+
+.questionWindow {
+  background-color: white;
+  height: var(--base-height);
+  width: var(--base-width);
+  box-shadow: 0 0 10px 2px rgba(100, 100, 100, 0.1);
+  border-radius: var(--border-size);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.question {
+  font-size: var(--size-question);
+  padding: 3.75rem 3.75rem 2.75rem 3.75rem;
+}
+
+.buttons {
+  list-style: none;
+  margin:0;
+  padding: 0 0 3rem 4.5rem;
+}
+
+.buttons .btn {
+  margin-bottom: var(--button-space);
+}
+
+.submit {
+  width : var(--base-width);
+  height: var(--submit-height);
+  background-color: var(--color-blue);
+  border-color: var(--color-blue);
+  color: var(--color-white);
+}
+
+.submit:hover,
+.reset:hover {
+  background-color: var(--color-deep-blue);
+}
+
+.result {
+  font-size: calc(var(--size-question) * 2);
+  width: var(--base-width);
+  height: calc(var(--base-height) / 2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.reset {
+  width : var(--base-width);
+  height: var(--submit-height);
+  background-color: var(--color-blue);
+  border-color: var(--color-blue);
+  color: var(--color-white);
+  margin-top: 120px;
+}
